@@ -1,0 +1,99 @@
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: lightseagreen;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: lightseagreen;
+    position: fixed;
+    top: 0px;
+    border-bottom: 1px solid seashell;
+    z-index: 5;
+}
+
+.logo {
+    height: 150%;
+    float: left;
+    padding-left: 10px;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    text-decoration: underline;
+    color: white;
+}
+
+.navigation a li img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.splash {
+    display: inline-flex;
+    justify-content: flex-start;
+    padding-top: 200px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.splash .main {
+    align-self: center;
+    justify-self: bottom;
+    flex-grow: 1;
+    margin-bottom: -30px;
+    z-index: 3;
+}
+
+.splash .contact {
+    max-width: 70%;
+    height: auto;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.services {
+    display: grid;
+}
+
+.services img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.services .description {
+    text-align: center;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+    .navigation {
+        display: none;
+    }
+
+    .logo {
+        float: none;
+        justify-self: center;
+    }
+}
